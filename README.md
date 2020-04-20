@@ -1,2 +1,2 @@
 # static
-Die statische Website der App-AG
+Hier findest du alle Dateien der statischen Website von dem Server der App-AG.
