@@ -1,9 +1,9 @@
 body {
   background: #1B7340 url(https://fridaysforfuture.de/erde_hell.svg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: 120% 20%;
-        background-size: 120%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 120% 20%;
+  background-size: 120%;
   color: white;
   font-family: Jost;
   text-align: center;
