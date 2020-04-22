@@ -2,20 +2,16 @@ body {
   background-color: #bfa88e;
   color: white;
   font-family: Jost;
-}
-h1 {
-  font-size: 24pt;
-}
-p {
-  font-size: 16pt;
-  width: 30%;
   text-align: center;
 }
-div {
-  text-align: left;
+h1 {
+  font-size: 36pt;
+}
+p {
+  font-size: 24pt;
+  text-align: center;
 }
 img {
   padding: 10px;
-  height: 20%;
-  width: 20%;
+  width: 50%;
 }
