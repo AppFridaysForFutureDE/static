@@ -2,7 +2,13 @@ body {
   background-color: #bfa88e;
   color: white;
   font-family: Jost;
-  height: 100%
+  height: 100%;
+
+  background: #1B7340 url(https://fridaysforfuture.de/erde_hell.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 120% 20%;
+  background-size: 120%;
 }
 html {
   height: 90%;
@@ -25,3 +31,22 @@ div {
   align-content: center;
   height: 100%;
 }
+.special-link, .nav-links a, button, input[type='button'], input[type='reset'], input[type='submit']:not(.accept), .button, .button:visited {
+        background: #1DA64A;
+        color: white !important;
+        padding: 10px;
+        text-transform: inherit;
+        border: none;
+        border-radius: 4px;
+        letter-spacing: normal;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1em;
+        display: inline-block;
+        margin-top: 5px;
+        -webkit-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+        box-shadow: 6px 6px 0px 0px #1b7340;
+        -webkit-box-shadow: 6px 6px 0px 0px #1b7340;
+  }
