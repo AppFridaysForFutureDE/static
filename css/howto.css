@@ -9,6 +9,8 @@ h1 {
 }
 p {
   font-size: 16pt;
+  width: 30%;
+  text-align: center;
 }
 div {
   text-align: left;
