@@ -14,8 +14,9 @@ div {
   text-align: left;
 }
 img {
-  height: 600px;
   padding: 10px;
+  height: 100%;
+  width: 100%;
 }
 .flex-container {
   display: flex;
@@ -29,6 +30,6 @@ img {
 }
 .image {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: no-wrap;
 }
