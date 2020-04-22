@@ -19,3 +19,11 @@ img {
   padding: 10px;
   width: 50%;
 }
+#footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 6%;
+  width: 100%;
+  text-align: right;
+}
