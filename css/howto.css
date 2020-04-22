@@ -2,7 +2,6 @@ body {
   background-color: #bfa88e;
   color: white;
   font-family: Jost;
-  height: 100%
 }
 h1 {
   font-size: 24pt;
@@ -19,22 +18,4 @@ img {
   padding: 10px;
   height: 20%;
   width: 20%;
-}
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: no-wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  height: 100%;
-  flex-grow: 1;
-}
-.image {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: no-wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
 }
