@@ -26,16 +26,17 @@ p {
   height: 6%;
   padding-right: 0.5em;
   width: calc(100% - 2em);
-  text-align: right;
 }
 @media (min-device-width: 577px){
     #footer{
         position:fixed;
         bottom:16px;
+        text-align: right;
     }
 }
 @media (max-device-width: 576px){
     #footer{
         position:static;
+        text-align: center;
     }
 }
