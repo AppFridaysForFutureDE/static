@@ -25,6 +25,7 @@ p {
 #footer {
   height: 6%;
   padding-right: 0.5em;
+  padding-bottom: 0.5em;
   width: calc(100% - 2em);
 }
 @media (min-device-width: 577px){
