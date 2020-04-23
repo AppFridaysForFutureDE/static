@@ -1,4 +1,4 @@
-.special-link, .nav-links a, button, input[type='button'], input[type='reset'], input[type='submit']:not(.accept), .button, .button:visited {
+.special-link {
   background: #1DA64A;
   color: white !important;
   padding: 10px;
@@ -16,6 +16,7 @@
   transition: all .2s;
   box-shadow: 6px 6px 0px 0px #1b7340;
   -webkit-box-shadow: 6px 6px 0px 0px #1b7340;
+  text-decoration:none;
 }
 body {
   background: #1B7340 url(https://fridaysforfuture.de/erde_hell.svg);
@@ -23,4 +24,7 @@ body {
   background-repeat: no-repeat;
   background-position: 120% 20%;
   background-size: 120%;
+}
+.special-link:hover{
+    background-color: #90D3ED;
 }
