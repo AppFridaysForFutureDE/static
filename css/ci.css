@@ -18,6 +18,7 @@
   -webkit-box-shadow: 6px 6px 0px 0px #1b7340;
   text-decoration:none;
   margin: 0.5em;
+  z-index: 10;
 }
 body {
   background: #1B7340 url(https://fridaysforfuture.de/erde_hell.svg);
