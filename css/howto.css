@@ -20,10 +20,25 @@ img {
   width: 50%;
 }
 #footer {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  height: 6%;
-  width: 100%;
-  text-align: right;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+}
+@media (min-device-width: 577px){
+    #footer{
+        position:fixed;
+        bottom:16px;
+        text-align: right;
+        width: calc(100% - 2em);
+    }
+}
+@media (max-device-width: 576px){
+    #footer{
+        position:static;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        justify-content: center;
+    }
 }
