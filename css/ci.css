@@ -25,6 +25,6 @@ body {
   background-position: 120% 20%;
   background-size: 120%;
 }
-.special-link:hover{
+.special-link:hover, button:hover {
     background-color: #90D3ED;
 }
