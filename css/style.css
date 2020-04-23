@@ -2,6 +2,7 @@ body {
   color: white;
   font-family: Jost;
   height: 100%;
+  text-align: left;
 }
 html {
   height: 90%;
@@ -11,9 +12,6 @@ h1 {
 }
 p {
   font-size: 16pt;
-}
-div {
-  text-align: left;
 }
 .flex-container {
   display: flex;
@@ -25,10 +23,19 @@ div {
   min-height: 100%;
 }
 #footer {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
   height: 6%;
-  width: 100%;
+  padding-right: 0.5em;
+  width: calc(100% - 2em);
   text-align: right;
+}
+@media (min-device-width: 577px){
+    #footer{
+        position:fixed;
+        bottom:16px;
+    }
+}
+@media (max-device-width: 576px){
+    #footer{
+        position:static;
+    }
 }
