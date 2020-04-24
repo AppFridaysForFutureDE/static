@@ -1,2 +1,7 @@
 User-Agent: *
 Allow: /
+Disallow: /internal*
+Disallow: /admin*
+Disallow: /controls*
+Disallow: /api*
+Disallow: /ghost*
