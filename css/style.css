@@ -46,3 +46,13 @@ p {
         justify-content: center;
     }
 }
+#dl {
+  font-size: 24pt;
+  padding: 0.5em;
+  padding-left:2em;
+  padding-right:2em;
+  background-color: #FF005C;;
+}
+#dl:hover {
+  background-color: #90D3ED;
+}
