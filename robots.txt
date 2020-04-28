@@ -5,3 +5,5 @@ Disallow: /admin*
 Disallow: /controls*
 Disallow: /api*
 Disallow: /ghost*
+Disallow: /404.html
+Disallow: /401.html
