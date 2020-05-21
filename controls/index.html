@@ -73,14 +73,19 @@
           </td>
           <td>
             <form action="/admin/controls/liveevent" method="post">
-              <label for="fname">First name:</label>
-              <input type="text" id="fname" name="fname"><br><br>
-              <label for="lname">Last name:</label>
-              <input type="text" id="lname" name="lname"><br><br>
-              <input type="submit" value="Submit">
-            </form>
+              <input type="hidden" id="id" name="id" value="0">
 
-            <button type="button" onclick="setLiveEvent()">Jetzt Live Event aktualisieren</button>
+              <label for="isAction">Aktiv</label>
+              <input type="checkbox" id="isAction" name="isAction" checked><br><br>
+
+              <label for="actionText">Text:</label>
+              <input type="text" id="actionText" name="actionText"><br><br>
+
+              <label for="actionUrl">Link:</label>
+              <input type="text" id="actionUrl" name="actionUrl"><br><br>
+
+              <input type="submit" value="Aktualisieren">
+            </form>
           </td>
         </tr>
       </table>
