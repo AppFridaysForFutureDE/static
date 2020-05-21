@@ -63,6 +63,26 @@
             <button type="button" onclick="requestPopulate()">Jetzt Datenbank aktualisieren</button>
           </td>
         </tr>
+
+        <tr>
+          <td>
+            Live Event
+          </td>
+          <td>
+            <span id="liveEvent">Nicht aktualisiert</span>
+          </td>
+          <td>
+            <form action="/admin/controls/liveevent" method="post">
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname"><br><br>
+              <label for="lname">Last name:</label>
+              <input type="text" id="lname" name="lname"><br><br>
+              <input type="submit" value="Submit">
+            </form>
+
+            <button type="button" onclick="setLiveEvent()">Jetzt Live Event aktualisieren</button>
+          </td>
+        </tr>
       </table>
     </div>
 
