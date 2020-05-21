@@ -75,8 +75,10 @@
             <form action="/admin/controls/liveevent" method="post">
               <input type="hidden" id="id" name="id" value="0">
 
-              <label for="isAction">Aktiv</label>
-              <input type="checkbox" id="isAction" name="isAction" checked><br><br>
+              <input type="radio" id="active" name="isAction" value="true" checked>
+              <label for="active">Aktiviert</label><br>
+              <input type="radio" id="inactive" name="isAction" value="false">
+              <label for="inactive">Deaktiviert</label><br><br>
 
               <label for="actionText">Text:</label>
               <input type="text" id="actionText" name="actionText"><br><br>
