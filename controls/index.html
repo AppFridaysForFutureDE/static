@@ -72,7 +72,7 @@
             <span id="liveEvent">Nicht aktualisiert</span>
           </td>
           <td>
-            <form action="/admin/controls/liveevent" method="post">
+            <form action="/admin/controls/liveevent" method="post" target="dummyframe">
               <input type="hidden" id="id" name="id" value="0">
 
               <input type="radio" id="active" name="isActive" value="true" checked>
@@ -99,6 +99,8 @@
     </div>
 
   </div>
+
+  <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 
 </body>
 
