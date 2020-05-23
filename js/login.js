@@ -2,6 +2,8 @@ function login(e) {
     console.log("login");
     var username = document.getElementById("inputUsername").value;
     var password = document.getElementById("inputPassword").value;
+    document.getElementById("inputUsername").value = "";
+    document.getElementById("inputPassword").value = "";
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "/controls", true);
     xhr.withCredentials = true;
