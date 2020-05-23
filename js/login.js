@@ -11,13 +11,14 @@ function login(e) {
         if (xhr.status == 200) {
             window.location.replace("/controls");
         } else {
-            alert("error");
+            $('#errAl').show();
         }
     };
     xhr.send();
 }
 
 window.onload = function () {
+    $('#errAl').hide();
     //automatically login if login header is set
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "/controls", true);
