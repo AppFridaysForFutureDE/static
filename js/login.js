@@ -14,7 +14,7 @@ function login(e) {
             window.location.replace("/controls");
         } else {
             $('#errAl').show();
-            setTimeout(function(){ $('#errAl').hide(); }, 5000);
+            setTimeout(function(){ $('#errAl').hide(); }, 3000);
         }
     };
     xhr.send();
