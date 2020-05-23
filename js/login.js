@@ -8,7 +8,11 @@ function login(e) {
     xhr.setRequestHeader("Authorization", 'Basic ' + btoa(`${username}:${password}`));
     xhr.onload = function () {
         console.log(xhr.responseText);
-        window.location.replace("/controls");
+        if (xhr.status == 200) {
+            window.location.replace("/controls");
+        } else {
+            alert("error");
+        }
     };
     xhr.send();
 }
