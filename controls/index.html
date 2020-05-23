@@ -1,107 +1,124 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-  <link rel="icon" href="https://app.fffutu.re/img/cropped-icon-32x32.png" sizes="32x32">
-  <link rel="icon" href="https://app.fffutu.re/img/cropped-icon-192x192.png" sizes="192x192">
-  <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
-  <link rel="stylesheet" href="../css/ci.css" type="text/css" charset="utf-8" />
-  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
-  <link rel="stylesheet" href="../css/controls.css" type="text/css" charset="utf-8" />
-  <script type="text/javascript" src="../js/controls.js"></script>
 
-  <meta charset="utf-8"/>
-  <meta name="robots" content="noindex" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Control Panel</title>
 
-  <title>
-     Controls | AppForFuture
-  </title>
-<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+      .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      }
+      @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+      }
+      }
+    </style>
+    <link href="../css/controls.css" rel="stylesheet">
 
-<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="../js/controls.js"></script>
+  </head>
 
-  <div class="flex-container">
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Control Panel</a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+          <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#DatenbankPage">
+                <span data-feather="file"></span>
+                Datenbank <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#ServicesPage">
+                <span data-feather="cloud"></span>
+                Services
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-    <div id="image">
-      <a href="/">
-        <img src="../img/app.png"/>
-      </a>
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+
+          <div class="tab-content">
+            <div id="DatenbankPage" class="tab-pane fade show active">
+              <br>
+              <h3>
+                Liveevent
+              </h3>
+              <hr class="my-4">
+              <form action="/admin/controls/liveevent" method="post" target="dummyframe">
+                <input type="hidden" id="id" name="id" value="0">
+  
+                <input type="radio" id="active" name="isActive" value="true" checked>
+                <label for="active">Aktiviert</label><br>
+                <input type="radio" id="inactive" name="isActive" value="false">
+                <label for="inactive">Deaktiviert</label><br>
+  
+                <label for="actionText">Text:</label>
+                <input class="form-control" type="text" id="actionText" name="actionText"><br>
+  
+                <label for="actionUrl">Link:</label>
+                <input class="form-control" type="text" id="actionUrl" name="actionUrl"><br>
+  
+                <input type="radio" id="inApp" name="inApp" value="true">
+                <label for="inApp">inApp</label><br>
+                <input type="radio" id="notInApp" name="inApp" value="false" checked>
+                <label for="notInApp">nicht inApp</label><br>
+  
+                <input type="submit" class="btn btn-primary" value="Aktualisieren">
+              </form><br><br>
+
+              <h3>
+                Datenbank füllen
+              </h3>
+              <hr class="my-4">
+              <span id="populate">Nicht ausgeführt</span><br><br>
+              <button class="btn btn-primary" type="button" onclick="requestPopulate()">Jetzt Datenbank aktualisieren</button><br><br>
+            </div>
+  
+            <div id="ServicesPage" class="tab-pane fade">
+              <br>
+              <h3>
+                Firebase-Status
+              </h3>
+              <hr class="my-4">
+              <span id="status">Nicht geladen</span><br><br>
+              <button class="btn btn-primary" type="button" onclick="getFirebase()">Aktualisieren</button>
+            </div>
+          </div>
+
+          <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+        </main>
+      </div>
     </div>
 
-  	<div id="text">
-      <h1>
-    	  Control Panel
-      </h1>
-      <table>
-        <tr>
-          <th>Dienst</th>
-          <th>Status</th>
-          <th>Aktion</th>
-        </tr>
-
-        <tr>
-          <td>
-            Firebase-Status
-          </td>
-          <td>
-            <span id="status">Nicht geladen</span>
-          </td>
-          <td>
-            <button type="button" onclick="getFirebase()">Aktualisieren</button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            Datenbank
-          </td>
-          <td>
-            <span id="populate">Nicht ausgeführt</span>
-          </td>
-          <td>
-            <button type="button" onclick="requestPopulate()">Jetzt Datenbank aktualisieren</button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            Live Event
-          </td>
-          <td>
-            <span id="liveEvent">Nicht aktualisiert</span>
-          </td>
-          <td>
-            <form action="/admin/controls/liveevent" method="post" target="dummyframe">
-              <input type="hidden" id="id" name="id" value="0">
-
-              <input type="radio" id="active" name="isActive" value="true" checked>
-              <label for="active">Aktiviert</label><br>
-              <input type="radio" id="inactive" name="isActive" value="false">
-              <label for="inactive">Deaktiviert</label><br><br>
-
-              <label for="actionText">Text:</label>
-              <input type="text" id="actionText" name="actionText"><br><br>
-
-              <label for="actionUrl">Link:</label>
-              <input type="text" id="actionUrl" name="actionUrl"><br><br>
-
-              <input type="radio" id="inApp" name="inApp" value="true">
-              <label for="inApp">inApp</label><br>
-              <input type="radio" id="notInApp" name="inApp" value="false" checked>
-              <label for="notInApp">nicht inApp</label><br><br>
-
-              <input type="submit" value="Aktualisieren">
-            </form>
-          </td>
-        </tr>
-      </table>
-    </div>
-
-  </div>
-
-  <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-
-</body>
-
+    <script>
+      feather.replace()
+    </script>
+  </body>
 </html>
+
