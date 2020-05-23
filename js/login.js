@@ -9,7 +9,6 @@ function login(e) {
     xhr.withCredentials = true;
     xhr.setRequestHeader("Authorization", 'Basic ' + btoa(`${username}:${password}`));
     xhr.onload = function () {
-        console.log(xhr.responseText);
         if (xhr.status == 200) {
             window.location.replace("/controls");
         } else {
@@ -29,7 +28,6 @@ window.onload = function () {
     xhr.withCredentials = true;
     xhr.setRequestHeader("Authorization", 'Basic ' + btoa(`a:a`));
     xhr.onload = function () {
-        console.log(xhr.responseText);
         if (xhr.status == 200) {
             window.location.replace("/controls");
         } else {
