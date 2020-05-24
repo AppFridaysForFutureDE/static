@@ -118,7 +118,7 @@
             </div>
 
             <div id="MonitorPage" class="tab-pane fade show active">
-              <iframe style="width: 80vw;height: 100vh;position: relative;" scrolling="no" src="/admin/status" frameborder="0" allowfullscreen></iframe>
+              <iframe id="statusframe" style="width: 80vw;height: 100vh;position: relative;" scrolling="no" src="/admin/status" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
 
@@ -132,7 +132,7 @@
       feather.replace()
 
       function reloadFrame() {
-        var iframe = document.getElementById('youriframe');
+        var iframe = document.getElementById('statusframe');
         iframe.src = iframe.src;
       }
     </script>
