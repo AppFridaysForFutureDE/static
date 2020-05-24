@@ -8,7 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Public Climate School</title>
+    <style>
+      body {
+        padding: 1em;
+      }
+    </style>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -18,31 +23,50 @@
   
   </head>
   <body>
-    <ul class="nav nav-fill">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PL-GXzQU_x0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <hr>
+    <ul class="nav nav-pills nav-fill">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Mo</a>
+        <a class="nav-link active" data-toggle="tab" href="#MontagPage">Mo</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Di</a>
+        <a class="nav-link" data-toggle="tab" href="#">Di</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Mi</a>
+        <a class="nav-link" data-toggle="tab" href="#">Mi</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Do</a>
+        <a class="nav-link" data-toggle="tab" href="#">Do</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Fr</a>
+        <a class="nav-link" data-toggle="tab" href="#">Fr</a>
       </li>
     </ul>
+    
+    <div class="tab-content">
+      <div id="MontagPage" class="tab-pane fade show active">
+        <h1>Montag</h1>
+      </div>
 
-    <h1 id="h">Mo</h1>
+      <div id="DienstagPage" class="tab-pane fade">
+        <h1>Dienstag</h1>
+      </div>
 
-    <script>
-      $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
-        document.getElementById('h').innerHTML = $(e.target).text();
-      });
-    </script>
+      <div id="MittwochPage" class="tab-pane fade">
+        <h1>Mittwoch</h1>
+      </div>
+
+      <div id="DonnerstagPage" class="tab-pane fade">
+        <h1>Donnerstag</h1>
+      </div>
+
+      <div id="FreitagPage" class="tab-pane fade">
+        <h1>Freitag</h1>
+      </div>
+    </div>
+
   </body>
 </html>
 
