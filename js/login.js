@@ -4,13 +4,21 @@ function login(e) {
     var password = document.getElementById("inputPassword").value;
     document.getElementById("inputUsername").value = "";
     document.getElementById("inputPassword").value = "";
+
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "/controls", true);
     xhr.withCredentials = true;
     xhr.setRequestHeader("Authorization", 'Basic ' + btoa(`${username}:${password}`));
     xhr.onload = function () {
         if (xhr.status == 200) {
-            window.location.replace("/controls");
+            var socketxhr = new XMLHttpRequest();
+            socketxhr.open("GET", "/socket.io/", true);
+            socketxhr.withCredentials = true;
+            socketxhr.setRequestHeader("Authorization", 'Basic ' + btoa(`${username}:${password}`));
+            socketxhr.onload = function () {
+                window.location.replace("/controls");
+            };
+            socketxhr.send();
         } else {
             $('#errAl').show();
             setTimeout(function(){ $('#errAl').hide(); }, 3000);
@@ -36,3 +44,4 @@ window.onload = function () {
     };
     xhr.send();
 }
+
