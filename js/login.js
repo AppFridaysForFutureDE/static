@@ -11,14 +11,14 @@ function login(e) {
     xhr.setRequestHeader("Authorization", 'Basic ' + btoa(`${username}:${password}`));
     xhr.onload = function () {
         if (xhr.status == 200) {
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "/socket.io", true);
-            xhr.withCredentials = true;
-            xhr.setRequestHeader("Authorization", 'Basic ' + btoa(`${username}:${password}`));
-            xhr.onload = function () {
+            var socketxhr = new XMLHttpRequest();
+            socketxhr.open("GET", "/socket.io", true);
+            socketxhr.withCredentials = true;
+            socketxhr.setRequestHeader("Authorization", 'Basic ' + btoa(`${username}:${password}`));
+            socketxhr.onload = function () {
                 window.location.replace("/controls");
             };
-            xhr.send();
+            socketxhr.send();
         } else {
             $('#errAl').show();
             setTimeout(function(){ $('#errAl').hide(); }, 3000);
@@ -33,18 +33,9 @@ window.onload = function () {
     //automatically login if login header is set
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "/controls", true);
-    xhr.withCredentials = true;
-    xhr.setRequestHeader("Authorization", 'Basic ' + btoa(`a:a`));
     xhr.onload = function () {
         if (xhr.status == 200) {
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "/socket.io", true);
-            xhr.withCredentials = true;
-            xhr.setRequestHeader("Authorization", 'Basic ' + btoa(`${username}:${password}`));
-            xhr.onload = function () {
-                window.location.replace("/controls");
-            };
-            xhr.send();
+            window.location.replace("/controls");
         } else {
             $('body').show();
         }
