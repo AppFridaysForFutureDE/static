@@ -131,10 +131,10 @@
     <script>
       feather.replace()
 
-      $("MonitorPage").on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
+      $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
         var iframe = document.getElementById('statusframe');
         iframe.src = "/admin/status";
-        alert("debug");
+        alert($(event.target).text());
       });
     </script>
   </body>
