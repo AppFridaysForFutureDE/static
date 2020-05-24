@@ -12,7 +12,7 @@ function login(e) {
     xhr.onload = function () {
         if (xhr.status == 200) {
             var socketxhr = new XMLHttpRequest();
-            socketxhr.open("GET", "/socket.io", true);
+            socketxhr.open("GET", "/socket.io/", true);
             socketxhr.withCredentials = true;
             socketxhr.setRequestHeader("Authorization", 'Basic ' + btoa(`${username}:${password}`));
             socketxhr.onload = function () {
