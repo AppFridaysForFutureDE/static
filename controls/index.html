@@ -58,6 +58,12 @@
                 Services
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#MonitorPage">
+                <span data-feather="activity"></span>
+                Online-Monitor
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -109,6 +115,10 @@
               <hr class="my-4">
               <span id="status">Nicht geladen</span><br><br>
               <button class="btn btn-primary" type="button" onclick="getFirebase()">Aktualisieren</button>
+            </div>
+
+            <div id="MonitorPage" class="tab-pane fade">
+              <iframe src="/admin/status"></iframe>
             </div>
           </div>
 
