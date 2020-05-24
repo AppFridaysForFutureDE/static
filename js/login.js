@@ -11,14 +11,7 @@ function login(e) {
     xhr.setRequestHeader("Authorization", 'Basic ' + btoa(`${username}:${password}`));
     xhr.onload = function () {
         if (xhr.status == 200) {
-            var socketxhr = new XMLHttpRequest();
-            socketxhr.open("GET", "/admin/status", true);
-            socketxhr.withCredentials = true;
-            socketxhr.setRequestHeader("Authorization", 'Basic ' + btoa(`${username}:${password}`));
-            socketxhr.onload = function () {
-                //window.location.replace("/controls");
-            };
-            socketxhr.send();
+            window.location.replace("/controls");
         } else {
             $('#errAl').show();
             setTimeout(function(){ $('#errAl').hide(); }, 3000);
