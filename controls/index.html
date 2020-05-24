@@ -58,7 +58,7 @@
                 Services
                 </a>
               </li>
-              <li class="nav-item" onclick="reloadFrame()">
+              <li class="nav-item">
                 <a class="nav-link active" data-toggle="tab" href="#MonitorPage">
                 <span data-feather="activity"></span>
                 Online-Monitor <span class="sr-only">(aktive Seite)</span>
@@ -130,6 +130,10 @@
 
     <script>
       feather.replace()
+
+      $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
+        alert('TAB CHANGED');
+      });
 
       function reloadFrame() {
         var iframe = document.getElementById('statusframe');
