@@ -132,13 +132,9 @@
       feather.replace()
 
       $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
-        alert('TAB CHANGED');
-      });
-
-      function reloadFrame() {
         var iframe = document.getElementById('statusframe');
         iframe.src = iframe.src;
-      }
+      });
     </script>
   </body>
 </html>
