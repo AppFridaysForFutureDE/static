@@ -16,7 +16,7 @@ function login(e) {
             socketxhr.withCredentials = true;
             socketxhr.setRequestHeader("Authorization", 'Basic ' + btoa(`${username}:${password}`));
             socketxhr.onload = function () {
-                window.location.replace("/controls");
+                //window.location.replace("/controls");
             };
             socketxhr.send();
         } else {
