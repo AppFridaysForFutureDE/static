@@ -33,6 +33,8 @@ window.onload = function () {
     //automatically login if login header is set
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "/controls", true);
+    xhr.withCredentials = true;
+    xhr.setRequestHeader("Authorization", 'Basic ' + btoa(`a:a`));
     xhr.onload = function () {
         if (xhr.status == 200) {
             window.location.replace("/controls");
