@@ -132,9 +132,9 @@
       feather.replace()
 
       $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
-        var iframe = document.getElementById('statusframe');
-        iframe.src = "/admin/status";
-        console.log($(e.target).text());
+        if ($(e.target).text().includes("Online-Monitor")) {
+          document.getElementById('statusframe').src = "/admin/status";
+        }
       });
     </script>
   </body>
