@@ -134,7 +134,7 @@
       $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
         var iframe = document.getElementById('statusframe');
         iframe.src = "/admin/status";
-        alert($(event.target).text());
+        alert($(e.target).text());
       });
     </script>
   </body>
