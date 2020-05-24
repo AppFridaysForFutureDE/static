@@ -118,7 +118,7 @@
             </div>
 
             <div id="MonitorPage" class="tab-pane fade">
-              <iframe id="statusframe" style="width: 70vw;height: 100vh;position: relative;" scrolling="no" src="/admin/status" frameborder="0" allowfullscreen></iframe>
+              <iframe id="statusframe" style="width: 70vw;height: 100vh;position: relative;" scrolling="no" src="" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
 
@@ -131,9 +131,10 @@
     <script>
       feather.replace()
 
-      $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
+      $("MonitorPage").on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
         var iframe = document.getElementById('statusframe');
-        iframe.src = iframe.src;
+        iframe.src = "/admin/status";
+        alert("debug");
       });
     </script>
   </body>
