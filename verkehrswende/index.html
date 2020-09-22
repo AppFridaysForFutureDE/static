@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Jost Css -->
+    <link href='http://fonts.googleapis.com/css?family=Jost:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Verkehrswende</title>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Jost:400,300,700);
+
+        body {
+            padding: 1em;
+            font-family: 'Jost', sans-serif !important;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            background-color: #1B7340 !important;
+            color: #ffffff !important;
+        }
+
+        .fff-turqoise {
+            background-color: #90D3ED !important;
+            border-color: #90D3ED !important;
+            color: #ffffff !important;
+        }
+
+        .nav-pills .nav-link {
+            color: #1B7340;
+        }
+
+        a,
+        h1 {
+            color: #1B7340;
+        }
+    </style>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container my-2">
+        <div class="row justify-content-center my-2">
+            <div class="col-sm embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" controls allowfullscreen>
+                    <source src="../img/autogipfel.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-2 mt-3">
+            <div class="col-sm">
+                <h3>
+                    Was ist dein Wunsch an die Automobilindustrie?
+                </h3>
+                <!-- Antworten werden in nem postbin gesammelt: https://postb.in/b/1600781569941-8385253604501 -->
+                <form action="https://postb.in/1600781569941-8385253604501" target="submissionIframe">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="wishtxt" name="wisch">
+                    </div>
+                    <button type="submit" class="btn btn-success">Absenden!</button>
+                </form>
+                <iframe style="display: none;" name="submissionIframe"></iframe>
+            </div>
+        </div>
+        <div class="row justify-content-center my-5">
+            <a class="col btn btn-primary mx-2 py-3 fff-turqoise" href="dev">
+                Offener Brief
+            </a>
+            <a class="col btn btn-primary mx-2 py-3 fff-turqoise" href="dev">
+                Infotext
+            </a>
+        </div>
+        <div class="row justify-content-center my-2">
+            <p class="col-sm">
+                Für die Zukunft des ÖPNVs fordern wir jetzt:
+                <br><br>
+                <span style="font-size: larger;" class="badge badge-pill badge-primary fff-turqoise">1.</span>
+                Investitionen in attraktive Arbeitsbedingungen und mehr Personal, eine Verdopplung des
+                ÖPNV-Angebotes
+                bis 2030 und eine langfristig solide Finanzierung durch Bund und Länder.
+                <br><br>
+                <span style="font-size: larger;" class="badge badge-pill badge-primary fff-turqoise">2.</span>
+                ÖPNV- Gipfel statt Autogipfel!
+                Die Bundesregierung muss endlich Verantwortung übernehmen für eine soziale und ökologische
+                Verkehrswende.
+                <br><br>
+                <span style="font-size: larger;" class="badge badge-pill badge-primary fff-turqoise">3.</span>
+                Entlastung und Anerkennung für die Klimaschützer*innen im ÖPNV.
+                Hierzu haben die Arbeitgeber zum Beispiel in den anstehenden Tarifverhandlungen für die
+                Beschäftigten
+                des ÖPNV die Chance einen ersten Schritt zu machen, indem sie bundesweit attraktive
+                Arbeitsbedingungen
+                schaffen.
+            </p>
+        </div>
+        <div class="row justify-content-center my-2">
+            <hr class="w-100">
+        </div>
+    </div>
+</body>
+
+</html>
