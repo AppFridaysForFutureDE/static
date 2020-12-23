@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Jost Css -->
+    <link href='https://fonts.googleapis.com/css?family=Jost:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Leserbrief an das Lektorat</title>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Jost:400,300,700);
+
+        body {
+            padding: 1em;
+            font-family: 'Jost', sans-serif !important;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            background-color: #1B7340 !important;
+            color: #ffffff !important;
+        }
+
+        .nav-pills .nav-link {
+            color: #1B7340;
+        }
+
+        a,
+        h1 {
+            color: #1B7340;
+        }
+        textarea.form-control {
+          height: 15em;
+        } 
+        h3.hidden {
+          visibility: hidden;
+        }
+    </style>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script>
+      function getName() {
+        const head = window.location.search;
+        const urlParams = new URLSearchParams(head);
+        const name = urlParams.get('name')
+        document.write(name)
+      }
+    </script>
+  </head>
+<body>
+<!-- Get Name: ?name1=value1 -->
+    <div class="container my-2">
+        <div class="row justify-content-center">
+            <div class="col-sm">
+                <h3 id="name">
+                    Deine Gedanken zu "<script>getName()</script>"
+                </h3>
+                <p>
+                    Hier kannst du uns deine Meinung hinterlassen. Bitte beachte jedoch die folgenden Hinweise:
+                    <ul>
+                      <li>Bitte bleibe sachlich und beziehe dich auf das Thema des Artikels.</li>
+                      <li>Hinterlasse keine persönlichen Daten. Der Inhalt deines Leserbriefs wird gemäß unserer 
+                        <a href="https://app-for-future.de/.well-known/privacy.txt">Datenschutzerklärung</a> verarbeitet.</li>
+                      <li>Je nach Bedarf können wir deinen Leserbrief in unserer App veröffentlichen. Wenn du damit einverstanden wärst, wähle bitte die entprechende Option unten.</li>
+                    </ul>
+                </p>
+                <form action="" target="submissionIframe">
+                  <h3 class="hidden"><script>getName()</script></h3>
+                    <div class="form-group">
+                      <h4>Dein (Spitz)Name:</h4>
+                        <input type="text" class="form-control" id="meaningtxt" name="meaning" required minlength="3" maxlength="300">
+                    </div>
+                    <div class="form-group">
+                      <h4>Dein Leserbrief:</h4>
+                        <textarea type="text" class="form-control" id="meaningtxt" name="meaning" required minlength="3" maxlength="9000" placeholder="Hinterlasse uns hier deine Gedanken"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <input type="checkbox"> Ich bin damit einverstanden, dass mein Leserbrief evtl. veröffentlicht wird.</input>
+                    </div>
+                  <button type="submit" class="btn btn-success">Absenden!</button>
+              </form>
+              <!--<iframe style="display: none;" name="submissionIframe"></iframe>-->
+            </div>
+        </div>
+       
+    </div>
+</body>
+
+</html>
