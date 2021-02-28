@@ -75,7 +75,7 @@
             <li>Je nach Bedarf könnten wir deinen Leserbrief veröffentlichen. Wenn du damit einverstanden bist, klicke unten auf das Kästchen.</li>
           </ul>
 
-          <form action="localhost:3000/api/v1/comments">
+          <form action="http://localhost:3000/api/v1/comments" method="POST">
             <div class="form-group">
               <label for="name">Dein (Spitz)Name:</label>
               <input type="text" class="form-control" id="name" name="name" required minlength="3" maxlength="300">
@@ -93,7 +93,7 @@
               <input type="text" class="form-control" id="articleReference" name="articleReference" required minlength="3" maxlength="300">
             </div>
             <div class="form-group">
-              <label><input type="checkbox"> Ich bin damit einverstanden, dass mein Leserbrief eventuell veröffentlicht wird.</input></label>
+              <label for="publish"><input type="checkbox" id="publish" name="publish" value="true"> Ich bin damit einverstanden, dass mein Leserbrief eventuell veröffentlicht wird.</input></label>
             </div>
             <button type="submit" class="btn btn-success">Absenden!</button>
           </form>
