@@ -35,7 +35,7 @@
         }
         textarea.form-control {
           height: 15em;
-        } 
+        }
         h3.hidden {
           visibility: hidden;
         }
@@ -53,59 +53,52 @@
         crossorigin="anonymous"></script>-->
 
     <script>
-      function getName() {
-        const head = window.location.search;
-        const urlParams = new URLSearchParams(head);
-        const name = urlParams.get('name')
-        document.write(name)
-      }
+      document.addEventListener('readystatechange', event => { 
+        if (event.target.readyState === "complete") {
+          const urlParams = new URLSearchParams(window.location.search);
+          document.getElementById('articleReference').value = urlParams.get('name');
+        }
+      });
     </script>
   </head>
-<body>
-<!-- Get Name: ?name1=value1 -->
+  <body>
     <div class="container my-2">
-        <div class="row justify-content-center">
-            <div class="col-sm">
-                <h3 id="name">
-                    Deine Gedanken
-                </h3>
-                <p>
-                    Hier kannst du uns deine Meinung hinterlassen. Bitte beachte jedoch die folgenden Hinweise:
-                    <ul>
-                      <li>Wenn du dich inhaltlich auf einen Artikel beziehst schreibe bitte auf welchen.</li>
-                      <li>Hinterlasse keine persönlichen Daten. Der Inhalt deines Leserbriefs wird gemäß unserer 
-                        <a href="https://app-for-future.de/.well-known/privacy.txt" target="_blank">Datenschutzerklärung</a> verarbeitet.</li>
-                      <li>Wenn du möchtest hinterlasse uns dein Alter, damit wir unsere Zielgruppe besser einschätzen können (aus Datenschutzgründen bitte nicht das genaue Geburtsdatum).</li>
-                      <li>Je nach Bedarf könnten wir deinen Leserbrief veröffentlichen, wenn du damit einverstanden bist, klicke unten auf das Kästchen.</li>
-                    </ul>
-                </p>
-                <form action="" target="submissionIframe">
-                  <h3 class="hidden"><script>getName()</script></h3>
-                    <div class="form-group">
-                      <h4>Dein (Spitz)Name:</h4>
-                        <input type="text" class="form-control" id="meaningtxt" name="meaning" required minlength="3" maxlength="300">
-                    </div>
-                    <div class="form-group">
-                      <h4>Dein Alter (optional):</h4>
-                        <input type="number" class="form-control" id="meaningtxt" name="meaning" maxlength="100">
-                    </div>
-                    <div class="form-group">
-                      <h4>Dein Leserbrief:</h4>
-                        <textarea type="text" class="form-control" id="meaningtxt" name="meaning" required minlength="3" maxlength="9000" placeholder="Hinterlasse uns hier deine Gedanken"></textarea>
-                    </div>
-                    <div class="form-group">
-                      <label><input type="checkbox"> Ich bin damit einverstanden, dass mein Leserbrief evtl. veröffentlicht wird.</input></label>
-                    </div>
-                    <div class="form-group">
-                      <label><input type="checkbox"> Ich beziehe mich auf den Artikel "<script>getName()</script>".</input></label>
-                    </div>
-                  <button type="submit" class="btn btn-success">Absenden!</button>
-              </form>
-              <!--<iframe style="display: none;" name="submissionIframe"></iframe>-->
-            </div>
-        </div>
-       
-    </div>
-</body>
+      <div class="row justify-content-center">
+        <div class="col-sm">
+          <h3 id="name">Deine Gedanken</h3>
+          <p>Hier kannst du uns deine Meinung hinterlassen. Bitte beachte jedoch die folgenden Hinweise:</p>
+          <ul>
+            <li>Wenn du dich inhaltlich auf einen Artikel beziehst schreibe bitte auf welchen.</li>
+            <li>Hinterlasse keine persönlichen Daten. Der Inhalt deines Leserbriefs wird gemäß unserer
+              <a href="https://app-for-future.de/.well-known/privacy.txt" target="_blank">Datenschutzerklärung</a> verarbeitet.</li>
+            <li>Wenn du möchtest hinterlasse uns dein Alter, damit wir unsere Zielgruppe besser einschätzen können (aus Datenschutzgründen bitte nicht das genaue Geburtsdatum).</li>
+            <li>Je nach Bedarf könnten wir deinen Leserbrief veröffentlichen. Wenn du damit einverstanden bist, klicke unten auf das Kästchen.</li>
+          </ul>
 
+          <form action="localhost:3000/api/v1/comments">
+            <div class="form-group">
+              <label for="name">Dein (Spitz)Name:</label>
+              <input type="text" class="form-control" id="name" name="name" required minlength="3" maxlength="300">
+            </div>
+            <div class="form-group">
+              <label for="age">Dein Alter (optional):</label>
+              <input type="number" class="form-control" id="age" name="age">
+            </div>
+            <div class="form-group">
+              <label>Dein Leserbrief:</label>
+              <textarea type="text" class="form-control" id="content" name="content" required minlength="3" maxlength="9000" placeholder="Hinterlasse uns hier deine Gedanken"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="articlRereference">Ich beziehe mich auf den Artikel:</label>
+              <input type="text" class="form-control" id="articleReference" name="articleReference" required minlength="3" maxlength="300">
+            </div>
+            <div class="form-group">
+              <label><input type="checkbox"> Ich bin damit einverstanden, dass mein Leserbrief eventuell veröffentlicht wird.</input></label>
+            </div>
+            <button type="submit" class="btn btn-success">Absenden!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
