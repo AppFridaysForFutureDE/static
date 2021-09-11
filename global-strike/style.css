@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+}
+
+h1 {
+    text-align: center;
+    color: #1DA64A;
+    font-size: 1.7rem;
+}
+
+
+/*Bild*/
+
+.titelbild {
+    width: 100%;
+    height: auto;
+}
+
+
+/*Countdown zum Klimastreik*/
+
+.countdown {
+    min-height: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#zahlen {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+h3 {
+    font-size: 0.9rem;
+    color: #1DA64A;
+}
+
+.tage,.stunden,.minuten,.sekunden {
+    font-size: 2rem;
+}
+
+.container-tage,.container-stunden,.container-minuten,.container-sekunden {
+    margin: 5px 10px;
+}
+
+
+/*Overview und Navigation*/
+
+
+
+.overview {
+    margin: 0.6rem;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.youtube-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.ytp-title-channel {
+    visibility: hidden;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+}
+
+.button1 {
+    text-transform: inherit;
+    font-weight: 700;
+    background-color: #1DA64A;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 30px;
+}
+
+#nav-btn1 {
+    margin-right: 0.5rem;
+}
+
+#nav-btn2 {
+    margin-left: 0.5rem;
+}
+
+#extrabutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+
+/*Streikkarte*/
+
+#karte-anweisung {
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#kartenrahmen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.karte {
+    width: 90%;
+    height: 35rem;
+}
+
+/*
+.abo-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+#sternchen-karte {
+    color: #1DA64A;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+} */
+
+
+/*Mobi-Material*/
+
+.mobi-info {
+    display: flex;
+    margin-top: 1rem;
+    font-weight: 500;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    align-items: center;
+}
+
+.mobi-info img {
+    object-fit: cover;
+    min-width: 120px;
+    height: 100%;
+    margin-left: 0.3rem;
+}
+
+.mobi-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 20px;
+}
+
+
+/*Profilbild-Generator*/
+
+#pfb-1 {
+    margin-top: 1rem;
+    text-align: left;
+    font-weight: 500;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+
+#pfb-2 {
+    text-align: right;
+    font-weight: 500;
+    margin-right: 0.6rem;
+}
+
+.pfb-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+.generator-bild {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.generator-bild img {
+    height: 10rem;
+    width: 10rem;
+}
+
+#pfb-hinweis {
+    font-size: 14px;
+    text-align: center;
+    margin: 0.5rem 6rem;
+}
+
+.button2 {
+    color: #1DA64A;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+
+/*Bundestagswahl*/
+
+.wrapper {
+    overflow: hidden;
+    margin: 1rem 0.6rem 1.5rem 0.6rem;
+}
+
+#text-btw {
+    font-weight: 500;
+    float: left;
+    width: 70%;
+    font-size: 14px;
+}
+
+.btw-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    font-size: 14px;
+}
