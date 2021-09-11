@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <!-- Required meta tags -->
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Jost Css -->
+    <link href='https://fonts.googleapis.com/css?family=Jost:400,300,500,600,700' rel='stylesheet' type='text/css'>
+    <title>CO2-Budget</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container my-2">
+        <div class="row justify-content-center">
+            <div class="col-sm">
+                <!-- <h3 id="name">
+                    CO<sub>2</sub>-Budget
+                </h3> -->
+
+                <h4>Zeit zur Einhaltung der 1,5-Grad-Grenze</h4>
+                <div id="timecountdown">
+                    <table cellpadding=3 cellspacing=0>
+                        <tr>
+                            <tr>
+                                <td id="years"></td>
+                                <td id="months"></td>
+                                <td id="days"></td>
+                                <td id="hours"></td>
+                                <td id="minutes"></td>
+                                <td id="seconds"></td>
+                                <td id="milliseconds"></td>
+                            </tr>
+                            <th>Jahre</th>
+                            <th>Monate</th>
+                            <th>Tage</th>
+                            <th>Stunden</th>
+                            <th>Minuten</th>
+                            <th>Sekunden</th>
+                            <th>
+                                <pre>     </pre>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <h4>Verbleibendes CO<sub>2</sub>-Budget (in Tonnen)</h4>
+                <div id="carbontonnes">error</div>
+
+                <div id="zitat">
+                    Zitat: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit temporibus est assumenda sunt. Dolor modi eaque sequi minus cupiditate laboriosam totam. Illo voluptatem nobis autem corporis harum commodi quae optio.
+                </div>
+
+                <div id="erklaerung">
+                    Erklärung: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto praesentium sunt eligendi recusandae adipisci dicta in, natus laborum nesciunt quidem saepe quasi laboriosam unde fugiat repudiandae ut asperiores nostrum cupiditate!
+                </div>
+
+                <div id="quelle">Quelle: <a href="https://www.mcc-berlin.net/forschung/co2-budget.html">Mercator Research Institute on
+                    Global Commons and Climate Change</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="CO2Calculator.js"></script>
+
+</html>
