@@ -7,7 +7,7 @@ for (let index = 0; index < agList.length; index++) {
     //Füge das icon der AG hinzu
     const ag_icon_img = document.createElement('img')
         //Falls ein Icon-Typ spezifiziert wurde, verwende diesen, ansonsten verwende den Dummy
-    const icon_name = element.getAttribute('icon-name') ? element.getAttribute('icon-name') + '.svg' : 'dummy.png'
+    const icon_name = (element.getAttribute('icon-name') ? element.getAttribute('icon-name') : 'empty') + '.svg'
     ag_icon_img.src = "media/ag_icons/" + icon_name;
     ag_icon_img.classList.add("ag-icon")
     element.appendChild(ag_icon_img);

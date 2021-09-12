@@ -56,11 +56,11 @@ ul {
     text-align: left;
 }
 
-.even-element>img {
+.even-element .ag-icon {
     width: 20%;
     text-align: left;
     float: left;
-    margin-top: 45pt;
+    margin-top: 50px;
 }
 
 .even-element .ag-textcontent {
@@ -79,7 +79,7 @@ ul {
     width: 20%;
     text-align: right;
     float: right;
-    margin-top: 45pt;
+    margin-top: 50px;
 }
 
 .odd-element .ag-textcontent {
