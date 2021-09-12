@@ -24,6 +24,7 @@ a {
     font-weight: 500;
     font-style: italic;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 ul {
@@ -59,6 +60,7 @@ ul {
     width: 20%;
     text-align: left;
     float: left;
+    margin-top: 45pt;
 }
 
 .even-element .ag-textcontent {
@@ -73,10 +75,11 @@ ul {
     text-align: right;
 }
 
-.odd-element>img {
+.odd-element .ag-icon {
     width: 20%;
     text-align: right;
     float: right;
+    margin-top: 45pt;
 }
 
 .odd-element .ag-textcontent {
