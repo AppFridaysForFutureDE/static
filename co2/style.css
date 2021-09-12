@@ -48,7 +48,7 @@ a {
     font-style: italic;
     background: rgba(29, 166, 74, 0.25);
     border-left: 10px solid #ccc;
-    margin: 1.5cm 10px;
+    margin: 0.5cm 10px;
     padding: 1em 10px;
     quotes: "\201C""\201D""\2018""\2019";
 }
@@ -68,8 +68,9 @@ a {
 } */
 
 #erklaerung {
-    margin-top: 1.5cm;
+    margin-top: 0.5cm;
     font-size: 11pt;
+    text-align: left;
 }
 
 a:link,
