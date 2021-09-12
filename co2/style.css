@@ -1,0 +1,79 @@
+#name {
+    text-align: center;
+    font-weight: bold;
+    color: #1DA64A;
+    font-size: 30pt;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    padding: 1em;
+    font-family: 'Jost', sans-serif !important;
+    font-weight: normal;
+    font-size: 10pt;
+    text-align: center;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 12pt;
+}
+
+table {
+    color: #1DA64A;
+    display: inline-block;
+    font-size: 10pt;
+    /* width: 100%;
+    height: auto; */
+}
+
+#carbontonnes {
+    color: #1DA64A;
+    margin-top: 5mm;
+    font-size: 11pt;
+}
+
+#quelle {
+    margin-top: 0.5cm;
+    font-size: 7pt;
+}
+
+a {
+    text-decoration: none;
+}
+
+#zitat {
+    font-size: 12pt;
+    font-style: italic;
+    background: rgba(29, 166, 74, 0.25);
+    border-left: 10px solid #ccc;
+    margin: 0.5cm 10px;
+    padding: 1em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+#zitat::before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+
+/* #zitat-autor {
+    font-style: normal;
+} */
+
+#erklaerung {
+    margin-top: 0.5cm;
+    font-size: 11pt;
+    text-align: left;
+}
+
+a:link,
+a:visited {
+    color: blue;
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <!-- Required meta tags -->
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Jost Css -->
+    <link href='https://fonts.googleapis.com/css?family=Jost:400,300,500,600,700' rel='stylesheet' type='text/css'>
+    <title>CO2-Budget</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container my-2">
+        <div class="row justify-content-center">
+            <div class="col-sm">
+                <!-- <h3 id="name">
+                    CO<sub>2</sub>-Budget
+                </h3> -->
+
+                <h4>Zeit zur Einhaltung der 1,5-Grad-Grenze</h4>
+                <div id="timecountdown">
+                    <table cellpadding=3 cellspacing=0>
+                        <tr>
+                            <tr>
+                                <td id="years"></td>
+                                <td id="months"></td>
+                                <td id="days"></td>
+                                <td id="hours"></td>
+                                <td id="minutes"></td>
+                                <td id="seconds"></td>
+                                <!-- <td id="milliseconds"></td> -->
+                            </tr>
+                            <th>Jahre</th>
+                            <th>Monate</th>
+                            <th>Tage</th>
+                            <th>Stunden</th>
+                            <th>Minuten</th>
+                            <th>Sekunden</th>
+                            <!-- <th>
+                                <pre>     </pre>
+                            </th> -->
+                        </tr>
+                    </table>
+                </div>
+                <h4>Verbleibendes CO<sub>2</sub>-Budget (in Tonnen)</h4>
+                <div id="carbontonnes">error</div>
+                <div id="quelle">Quelle: <a target="_blank" href="https://www.mcc-berlin.net/forschung/co2-budget.html">Mercator Research Institute on
+                    Global Commons and Climate Change</a></div>
+                <div id="zitat">
+                    Wir müssen weg von aus der Luft gegriffenen Reduktionspfaden und hin zu einem wissenschaftsbasierten CO2-Budget als Grundlage deutscher Klimapolitik.
+                    <!-- <br><br> <span id="zitat-autor">Greta Thunberg</span> -->
+                </div>
+                <div id="erklaerung">
+                    So gut wie alle großen deutschen Parteien haben Klimaschutz in ihre Wahlprogramme aufgenommen. Keines davon reicht um 1,5 Grad einzuhalten! Keines davon reduziert die deutschen CO2-Emissionen genug. Aktuelle Reduktionsziele sind nicht an die Realität
+                    gekoppelt, sondern frei aus der Luft gegriffen. Deshalb fordern wir auf wissenschaftlichen Daten beruhende Zielsetzungen!
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="CO2Calculator.js"></script>
+
+</html>
