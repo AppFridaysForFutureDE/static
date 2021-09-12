@@ -35,7 +35,7 @@ table {
 }
 
 #quelle {
-    margin-top: 2cm;
+    margin-top: 0.5cm;
     font-size: 7pt;
 }
 
@@ -48,7 +48,7 @@ a {
     font-style: italic;
     background: rgba(29, 166, 74, 0.25);
     border-left: 10px solid #ccc;
-    margin: 2cm 10px;
+    margin: 1.5cm 10px;
     padding: 1em 10px;
     quotes: "\201C""\201D""\2018""\2019";
 }
@@ -62,10 +62,17 @@ a {
     vertical-align: -0.4em;
 }
 
-#zitat-autor {
+
+/* #zitat-autor {
     font-style: normal;
-}
+} */
 
 #erklaerung {
-    margin-top: 2cm;
+    margin-top: 1.5cm;
+    font-size: 11pt;
+}
+
+a:link,
+a:visited {
+    color: blue;
 }
