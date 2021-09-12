@@ -1,98 +1,92 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    vertical-align: middle;
-  }
-  
-  #name {
-    font-family: "Jost", sans-serif !important;
-    text-align: center;
-    color: #60b157;
-    font-size: 34pt;
-    width: 100%;
-    height: auto;
-  }
-  
-  body {
-    font-family: "Jost", sans-serif;
-    font-weight: normal;
-  }
-  
-  a {
-    color: black;
-    font-weight: 500;
-    font-style: italic;
-    text-decoration: none;
-  }
-  
-  ul {
-    text-align: left;
-    margin-left: 25px;
-  }
-  
-  .titelbild {
-    width: 100%;
-    height: auto;
-  }
-  
-  .ag-title {
-    font-size: 1.5em !important;
-    color: #60b157;
-    font-weight: 700;
-    font-family: "Jost", sans-serif !important;
-  }
-  
-  .ag-list-elem {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: inline-block;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  
-  .ag-text p {
-  }
-  
-  .ag-list-elem .ag-textcontent .ag-text a {
-    word-break: break-all;
-  }
-  
-  .even-element {
-    text-align: left;
-  }
-  
-  .even-element .ag-icon {
-    width: 20%;
-    text-align: left;
-    float: left;
-    margin-top: 1.5em;
-  }
-  
-  .even-element .ag-textcontent {
-    width: 75%;
-    margin-left: 2%;
-    margin-right: 2%;
-    text-align: left;
-    float: right;
-  }
-  
-  .odd-element {
-    text-align: right;
-  }
-  
-  .odd-element .ag-icon {
-    width: 20%;
-    text-align: right;
-    float: right;
-    margin-top: 50px;
-  }
-  
-  .odd-element .ag-textcontent {
-    width: 75%;
-    margin-right: 2%;
-    margin-left: 2%;
-    text-align: right;
-    float: left;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+#name {
+  font-family: "Jost", sans-serif !important;
+  text-align: center;
+  color: #60b157;
+  font-size: 34pt;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+}
+
+a {
+  color: black;
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: none;
+}
+
+ul {
+  text-align: left;
+  margin-left: 25px;
+}
+
+.titelbild {
+  width: 100%;
+  height: auto;
+}
+
+.ag-title {
+  font-size: 1.5em !important;
+  color: #60b157;
+  font-weight: 700;
+  font-family: "Jost", sans-serif !important;
+}
+
+.ag-list-elem {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.ag-list-elem .ag-textcontent .ag-text a {
+  word-break: break-all;
+}
+
+.even-element {
+  text-align: left;
+}
+
+.even-element .ag-icon {
+  width: 20%;
+  text-align: left;
+  float: left;
+  margin-right: 1em;
+}
+
+.even-element .ag-textcontent {
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: left;
+  float: right;
+}
+
+.odd-element {
+  text-align: right;
+}
+
+.odd-element .ag-icon {
+  text-align: right;
+  float: right;
+  margin-left: 1em;
+  width: 20%;
+}
+
+.odd-element .ag-textcontent {
+  margin-right: 2%;
+  margin-left: 2%;
+  text-align: right;
+  float: left;
+}
